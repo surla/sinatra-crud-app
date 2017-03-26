@@ -8,9 +8,9 @@ gem 'rake'
 gem 'sinatra-activerecord'
 gem 'require_all'
 gem 'shotgun'
+gem 'tux'
 
 group :development do
   gem 'pry'
   gem 'sqlite3'
-  gem 'tux'
 end

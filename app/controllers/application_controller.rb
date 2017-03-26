@@ -1,5 +1,3 @@
-require "./config/environment"
-
 class ApplicationController < Sinatra::Base
 
   configure do
@@ -8,8 +6,8 @@ class ApplicationController < Sinatra::Base
     set :session_secret, "password_security"
   end
 
-get '/' do
-  erb :index
-end
+  get '/' do
+    erb :index
+  end
 
 end

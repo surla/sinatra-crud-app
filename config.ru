@@ -1,9 +1,8 @@
-require_relative './app/controllers/application_controller'
-require_relative './app/controllers/registrations_controller'
-require_relative './app/controllers/users_controller'
+
+require_relative './config/environment'
 
 
 use Rack::MethodOverride
-use UsersController
 use RegistrationsController
+use UsersController
 run ApplicationController
